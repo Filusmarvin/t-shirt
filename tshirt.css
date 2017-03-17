@@ -9,14 +9,21 @@ body{
 article{
   max-width: 540px;
   margin: 10px;
-  border: 3px solid #81bce6;
+  border:
   /*flex-grow: 1px;
   flex-shrink: 1px;*/
 }
 
+.picbox{
+  border: 3px solid #81bce6;
+  padding: 1px;
+}
 
-.shirts{
-position:relative;
+.shirts {
+    position: relative;
+    align-content: center;
+    margin: 10px;
+    height: 460px;
 }
 .shirts .front{
   position: absolute;
@@ -26,10 +33,7 @@ position:relative;
 }
 
 
-.front:hover{
-  transform: rotateY(90deg);
-  transition:all 2s;
-}
+
 
 
 .back{
@@ -37,11 +41,7 @@ position:relative;
   transform: rotateY(0deg);
   opacity: 1;
 }
-.back:hover{
-  transform: rotateY(360deg);
-  transition:all 4s;
 
-}
 
 .front{
   padding: 50px;
@@ -52,12 +52,12 @@ position:relative;
 
 
 .fa {
-    font-size: 35px !important;
+    font-size: 40px !important;
+    width: 40px !important;
+    height: 40px !important;
     color: #81bce6;
     padding: 25px;
 }
-
-
 
 
 
@@ -69,26 +69,34 @@ position:relative;
 ============== vvvvv  Footer   vvvvv   ==============
 */
 
-footer{
+section{
   border:1px solid #81bce6;
+  border-top: none;
   display: flex;
-  justify-content: ;
+
 
 }
 .shirt{
   border:2px solid #81bce6;
   margin:0px;
   padding:0px;
-  height: 90px;
-  width:90px;
+  height: 96px;
+  width:96px;
 }
 .shirt:hover{
   opacity: ;
   background-color: #81bce6;
 }
+.shirt:hover .sz{
+  color:white;
+}
+.shirt:hover .box {
+    border: 3px solid white;
+}
 
 .shirt .fa:hover{
   color: white;
+
 }
 
 .sz{
@@ -106,15 +114,40 @@ footer{
 
 }
 
+.box{
+  background-color: #81bce6;
+  width: 35px;
+  height: 35px;
+  margin: 25px;
+}
+
+.box:hover{
+  border:white;
+}
+
 /*
-=================== Second Footer ==============
+===================  Footer ==============
 */
 
-#bottom{
+footer{
+  display:flex;
   justify-content: space-between;
   border: none;
 }
 
+#word{
+  max-width:49%;
+  justify-content:
+  border: 1px solid green;
+}
+
+#price{
+  justify-content:
+}
+span{
+  color:#81bce6;
+  font-size: 20px;
+}
 
 
 
@@ -131,7 +164,7 @@ footer{
     border-right: none;
     position: absolute;
     top: 18px;
-    left: 410px;
+    left: 425px;
     transform: rotateX(180deg);
 }
 
@@ -140,7 +173,7 @@ footer{
   border-right: none;
   position: absolute;
   top: 18px;
-  left: 908px;
+  left: 948px;
   transform: rotateX(180deg);
 }
 
@@ -149,6 +182,11 @@ footer{
   border-right: none;
   position: absolute;
   top: 18px;
-  left: 1410px;
+  left: 1472px;
   transform: rotateX(180deg);
+}
+
+.fa-repeat:hover.front{
+  transform: rotateY(180deg);
+  transition: all 5s;
 }
