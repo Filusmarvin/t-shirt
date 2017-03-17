@@ -1,0 +1,122 @@
+
+
+/*
+================= vvvvv     Main Body      vvvvv  ===============
+*/
+body{
+  display: flex;
+}
+article{
+  max-width: 540px;
+  margin: 10px;
+  border: 3px solid #81bce6;
+  /*flex-grow: 1px;
+  flex-shrink: 1px;*/
+}
+
+
+.shirts{
+position:relative;
+}
+.shirts .front{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+.front:hover{
+  transform: rotateY(90deg);
+  transition:all 2s;
+}
+
+
+.back{
+  padding: 50px;
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+.back:hover{
+  transform: rotateY(360deg);
+  transition:all 4s;
+
+}
+
+.front{
+  padding: 50px;
+}
+
+
+/*
+============== vvvvv  Footer   vvvvv   ==============
+*/
+
+footer{
+  border:1px solid #81bce6;
+  display: flex;
+  justify-content: ;
+
+}
+.shirt{
+  border:2px solid #81bce6;
+  margin:0px;
+  padding:0px;
+  height: 90px;
+  width:90px;
+}
+.shirt:hover{
+  opacity: ;
+  background-color: #81bce6;
+}
+
+
+/*
+=================== Second Footer ==============
+*/
+
+#bottom{
+  justify-content: space-between;
+  border: none;
+}
+
+
+
+
+
+
+
+/*
+=============== Div Box ===============
+*/
+
+
+#box {
+    border: 3px solid #81bce6;
+    border-right: none;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 18px;
+    left: 415px;
+}
+
+#box2 {
+    border: 3px solid #81bce6;
+    border-right: none;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 18px;
+    left: 908px;
+}
+
+#box3 {
+    border: 3px solid #81bce6;
+    border-right: none;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 18px;
+    left:1400px;
+}
