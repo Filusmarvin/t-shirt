@@ -46,6 +46,23 @@ position:relative;
 .front{
   padding: 50px;
 }
+/*
+============== vvvvv Icons    vvvvvv   ==============
+*/
+
+
+.fa {
+    font-size: 35px !important;
+    color: #81bce6;
+    padding: 25px;
+}
+
+
+
+
+
+
+
 
 
 /*
@@ -70,6 +87,24 @@ footer{
   background-color: #81bce6;
 }
 
+.shirt .fa:hover{
+  color: white;
+}
+
+.sz{
+  font-size: 35px;
+    /* padding: 0px; */
+    color: #81bce6;
+    text-align: center;
+    margin: 25px;
+}
+
+.sz:hover{
+  color:white;
+}
+.top {
+
+}
 
 /*
 =================== Second Footer ==============
@@ -87,36 +122,33 @@ footer{
 
 
 /*
-=============== Div Box ===============
+=============== vvvvvvv  Icon Boxes vvvvvvv ===============
 */
 
 
-#box {
+.first{
     border: 3px solid #81bce6;
     border-right: none;
-    width: 70px;
-    height: 70px;
     position: absolute;
     top: 18px;
-    left: 415px;
+    left: 410px;
+    transform: rotateX(180deg);
 }
 
-#box2 {
-    border: 3px solid #81bce6;
-    border-right: none;
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    top: 18px;
-    left: 908px;
+.second {
+  border: 3px solid #81bce6;
+  border-right: none;
+  position: absolute;
+  top: 18px;
+  left: 908px;
+  transform: rotateX(180deg);
 }
 
-#box3 {
-    border: 3px solid #81bce6;
-    border-right: none;
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    top: 18px;
-    left:1400px;
+.third {
+  border: 3px solid #81bce6;
+  border-right: none;
+  position: absolute;
+  top: 18px;
+  left: 1410px;
+  transform: rotateX(180deg);
 }
