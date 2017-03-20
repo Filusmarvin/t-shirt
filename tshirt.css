@@ -25,12 +25,7 @@ article{
     margin: 10px;
     height: 460px;
 }
-.shirts .front{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
+
 
 
 
@@ -89,6 +84,10 @@ section{
 }
 .shirt:hover .sz{
   color:white;
+}
+
+.shirt:hover {
+  visibility: visible;
 }
 .shirt:hover .box {
     border: 3px solid white;
@@ -189,4 +188,29 @@ span{
 .fa-repeat:hover.front{
   transform: rotateY(180deg);
   transition: all 5s;
+}
+
+/*
+=============== Hidden Items  ============
+*/
+
+
+#menu-selection {
+    background-color: white;
+    border: 1px solid #81bce6;
+    position: absolute;
+    top: 195px;
+    left: 208px;
+    width: 120px;
+    height: 300px;
+    visibility: hidden;
+}
+#menu-selection:hover{
+  transform: translateY(10px);
+  transition: all 2s;
+  visibility: visible;
+}
+
+.top .shirt:hover.shirt-sz{
+  visibility: visible;
 }
