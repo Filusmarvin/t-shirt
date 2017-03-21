@@ -20,25 +20,48 @@ article{
 }
 
 .shirts {
-    position: relative;
+    position:relative;
     align-content: center;
     margin: 10px;
     height: 460px;
 }
+.backblue{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotateY(90deg);
+  padding:50px;
 
-
-
-
-
-
-.back{
-  padding: 50px;
-  transform: rotateY(0deg);
-  opacity: 1;
 }
 
 
-.front{
+.frontblue{
+  padding: 50px;
+}
+.backpink{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotateY(90deg);
+  padding:50px;
+
+}
+
+
+.frontpink{
+  padding: 50px;
+}
+.backyellow{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotateY(90deg);
+  padding:50px;
+
+}
+
+
+.frontyellow{
   padding: 50px;
 }
 /*
@@ -61,7 +84,7 @@ article{
 
 
 /*
-============== vvvvv  Footer   vvvvv   ==============
+============== vvvvv  section   vvvvv   ==============
 */
 
 section{
@@ -124,6 +147,20 @@ section{
   border:white;
 }
 
+.color{
+  position: absolute;
+  background-color: white;
+  border: 1px solid #81bce6;
+  top: 385px;
+  left: 308px;
+  height: 120px;
+  width: 120px;
+  visibility: hidden;
+}
+
+.box:hover.color{
+  visibility: visible;
+}
 /*
 ===================  Footer ==============
 */
@@ -158,7 +195,7 @@ span{
 */
 
 
-.first{
+.firsticon{
     border: 3px solid #81bce6;
     border-right: none;
     position: absolute;
@@ -167,7 +204,7 @@ span{
     transform: rotateX(180deg);
 }
 
-.second {
+.secondicon {
   border: 3px solid #81bce6;
   border-right: none;
   position: absolute;
@@ -176,7 +213,7 @@ span{
   transform: rotateX(180deg);
 }
 
-.third {
+.thirdicon {
   border: 3px solid #81bce6;
   border-right: none;
   position: absolute;
@@ -195,20 +232,71 @@ span{
 */
 
 
-#menu-selection {
+.menu-selection {
     background-color: white;
     border: 1px solid #81bce6;
     position: absolute;
-    top: 195px;
+    top: 205px;
     left: 208px;
     width: 120px;
     height: 300px;
-    visibility: hidden;
 }
-#menu-selection:hover{
-  transform: translateY(10px);
-  transition: all 2s;
+
+.shirt:hover .menu-selection{
   visibility: visible;
+}
+ul .word{
+  font-size: 30px;
+  list-style: none;
+}
+.second{
+  background-color: white;
+  color: #81bce6;
+  background-image: url(shirts/tshirt.svg);
+  background-repeat: repeat-y;
+  background-size: 100px;
+  border: 1px solid #81bce6;
+  position: absolute;
+  top: 205px;
+  left: 726px;
+  width: 120px;
+  height: 300px;
+  visibility:hidden;
+}
+
+.xl:hover p {
+  background-color: #81bce6;
+  color:white;
+}
+  .l:hover p {
+    background-color: #81bce6;
+    color:white;
+  }
+    .m:hover p {
+      background-color: #81bce6;
+      color: white;
+    }
+      .s:hover p {
+        background-color: #81bce6;
+        color: white;
+      }
+
+}
+.word {
+  padding-top: 10px;
+  font-size: 30px;
+
+}
+
+.third{
+  background-color: white;
+  border: 1px solid #81bce6;
+  position: absolute;
+  top: 205px;
+  left: 1250px;
+  width: 120px;
+  height: 300px;
+  visibility:hidden;
 }
 
 .top .shirt:hover.shirt-sz{

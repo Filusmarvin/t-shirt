@@ -15,27 +15,38 @@
 <article class="3shirts">
 	<div class="picbox">
   	<div class="shirts">
-    	<img class="front" src="shirts/blue-front.png">
-    	<img class="back" src="">
+    	<img class="frontblue" src="shirts/blue-front.png">
+    	<img class="backblue" src="shirts/blue-back.png">
   	</div>
 	</div>
   <section class="top">
-    <div class="shirt"> <i class="fa fa-exchange" aria-hidden="true"></i>
+    <div class="shirt">
+			<i class="fa fa-exchange" aria-hidden="true"></i>
     </div>
-    <div class="shirt"> <i class="fa fa-heart" aria-hidden="true"></i>
+    <div class="shirt">
+			<i class="fa fa-heart" aria-hidden="true"></i>
     </div>
-    <div class="shirt"> <p class="sz"> XL </p>
-			<div id="menu-selection" class="shirt-sz"></div>
+    <div class="shirt">
+			<p class="sz"> XL </p>
+			<div class="menu-selection first shirt-sz">
+			</div>
     </div>
+
+    <div class="shirt">
+			<div class="box"></div>
+			<div class="color"></div>
     </div>
-    <div class="shirt"> <div class="box"></div>
-    </div>
-    <div class="shirt"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    <div class="shirt">
+			<i class="fa fa-shopping-cart" aria-hidden="true"></i>
     </div>
   </section>
   <footer id="bottom">
-    <div id="word" class="money"> <span id="type"> Save the Trees </span> </div>
-    <div id="word" class="money"> <span id="price"> $29 </span> </div>
+    <div id="word" class="money">
+			 <span id="type"> Save the Trees </span>
+		</div>
+    <div id="word" class="money">
+			<span id="price"> $29 </span>
+		</div>
   </footer>
 </article>
 
@@ -44,8 +55,8 @@
 <article class="3shirts">
 	<div class="picbox">
   	<div class="shirts">
-  	  <img class="front" src="shirts/pink-front.png">
-  	  <img class="back" src="">
+  	  <img class="frontpink" src="shirts/pink-front.png">
+  	  <img class="backpink" src="shirts/pink-back.png">
   	</div>
   </div>
 	<section class="top">
@@ -54,8 +65,14 @@
     <div class="shirt"><i class="fa fa-heart" aria-hidden="true"></i>
     </div>
     <div class="shirt"><p class="sz"> XL </p>
-			<div id="menu-selection" class="shirt-sz"></div>
-    </div>
+			<div class="menu-selection second shirt-sz">
+				<ul class="sz#2">
+					<li class="xl"> <p class="word"> XL </p></li>
+					<li class="l"> <p class="word"> L </p> </li>
+					<li class="m"> <p class="word"> M </p> </li>
+					<li class="s"> <p class="word"> S </p> </li>
+				</ul>
+			</div>
     </div>
     <div class="shirt"> <div class="box"></div>
     </div>
@@ -73,21 +90,25 @@
 <article class="3shirts">
 	<div class="picbox">
    <div class="shirts">
-	    <img class="front" src="shirts/yellow-front.png">
-  	  <img class="back" src="">
+	    <img class="frontyellow" src="shirts/yellow-front.png">
+  	  <img class="backyellow" src="shirts/yellow-back.png">
   	</div>
 </div>
 	<section class="top">
     <div class="shirt"> <i class="fa fa-exchange" aria-hidden="true"></i>
     </div>
-    <div class="shirt"> <i class="fa fa-heart" aria-hidden="true"></i>
-			<div id="menu-selection" class="shirt-sz"></div>
+    <div class="shirt">
+			<i class="fa fa-heart" aria-hidden="true"></i>
+
     </div>
-    <div class="shirt size"> <p class="sz"> XL </p>
+    <div class="shirt size">
+			<p class="sz"> XL </p>
+			<div class="menu-selection third shirt-sz"></div>
     </div>
     <div class="shirt"> <div class="box"></div>
     </div>
-    <div class="shirt"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    <div class="shirt">
+			 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
     </div>
   </section>
   <footer id="bottom">
@@ -95,13 +116,87 @@
     <div id="word" class="money"> <span id="price"> $39 </span> </div>
   </footer>
 </article>
+<!-- ^^^^ change id's to classes ^^^^ -->
+<i class="fa fa-repeat firsticon" aria-hidden="true"></i>
+<i class="fa fa-repeat secondicon" aria-hidden="true"></i>
+<i class="fa fa-repeat thirdicon" aria-hidden="true"></i>
 
-<i class="fa fa-repeat first" aria-hidden="true"></i>
-<i class="fa fa-repeat second" aria-hidden="true"></i>
-<i class="fa fa-repeat third" aria-hidden="true"></i>
+
+<script>
+
+<!-- front shirt blue -->
+	function rotating(){
+		let element = document.querySelector('.frontblue');
+		element.style.transform = "rotateY(90deg)";
+	}
+
+	let button = document.querySelector('.firsticon');
+	    button.addEventListener('click', rotating);
+
+<!-- Backshirt blue -->
+function backrotation(){
+	let element = document.querySelector('.backblue');
+	element.style.transform = "rotateY(0deg)";
+}
+		button.addEventListener('click', backrotation);
 
 
-<div class="hello"> </div>
+
+
+
+
+
+
+
+		<!-- front shirt pink -->
+			function rotating2(){
+				let element = document.querySelector('.frontpink');
+				element.style.transform = "rotateY(90deg)";
+			}
+
+			let buttondos = document.querySelector('.secondicon');
+			    buttondos.addEventListener('click', rotating2);
+
+		<!-- Backshirt pink -->
+		function backrotation2(){
+			let element = document.querySelector('.backpink');
+			element.style.transform = "rotateY(0deg)";
+		}
+				buttondos.addEventListener('click', backrotation2);
+
+
+
+
+
+				<!-- front shirt yellow -->
+					function rotating3(){
+						let element = document.querySelector('.frontyellow');
+						element.style.transform = "rotateY(90deg)";
+					}
+
+					let buttontrio = document.querySelector('.thirdicon');
+					    buttontrio.addEventListener('click', rotating3);
+
+				<!-- Backshirt yellow -->
+				function backrotation3(){
+					let element = document.querySelector('.backyellow');
+					element.style.transform = "rotateY(0deg)";
+				}
+
+						buttontrio.addEventListener('click', backrotation3);
+
+<!--          Shirt Icon    -->
+
+function pickSize (){
+	let selector = document.querySelector("sz");
+	let greeting = 'L';
+      element.innerText = greeting;
+}
+let xl = document.querySelector('.l');
+    xl.addEventListener('click', pickSize);
+
+
+</script>
 
 </body>
 </html>
