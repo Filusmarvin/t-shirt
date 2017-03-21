@@ -102,16 +102,13 @@ section{
   width:96px;
 }
 .shirt:hover{
-  opacity: ;
+  visibility: visible;
   background-color: #81bce6;
 }
 .shirt:hover .sz{
   color:white;
 }
 
-.shirt:hover {
-  visibility: visible;
-}
 .shirt:hover .box {
     border: 3px solid white;
 }
@@ -147,7 +144,7 @@ section{
   border:white;
 }
 
-.color{
+.colorbox1{
   position: absolute;
   background-color: white;
   border: 1px solid #81bce6;
@@ -158,7 +155,7 @@ section{
   visibility: hidden;
 }
 
-.box:hover.color{
+.shirt.color:hover{
   visibility: visible;
 }
 /*
@@ -240,9 +237,13 @@ span{
     left: 208px;
     width: 120px;
     height: 300px;
+    visibility: hidden;
 }
 
 .shirt:hover .menu-selection{
+  visibility: visible;
+}
+.shirt:hover .color{
   visibility: visible;
 }
 ul .word{
@@ -264,6 +265,27 @@ ul .word{
   visibility:hidden;
 }
 
+.colorbox2{
+  position: absolute;
+  background-color: white;
+  border: 1px solid #81bce6;
+  top: 385px;
+  left: 829px;
+  height: 120px;
+  width: 120px;
+  visibility: hidden;
+}
+
+.colorbox3{
+  position: absolute;
+  background-color: white;
+  border: 1px solid #81bce6;
+  top: 385px;
+  left: 1351px;
+  height: 120px;
+  width: 120px;
+  visibility: hidden;
+}
 .xl:hover p {
   background-color: #81bce6;
   color:white;
@@ -301,4 +323,35 @@ ul .word{
 
 .top .shirt:hover.shirt-sz{
   visibility: visible;
+}
+
+/*
+================  Pictures in the hover box ====================
+
+*/
+
+.colors{
+  justify-content: center;
+}
+.bluebox{
+  position:relative ;
+  height: 40px;
+  width: 40px;
+  background-color:#81bce6;
+}
+.pinkbox{
+  position:relative;
+  height: 40px;
+  width: 40px;
+  background-color: orange;
+}
+.yellowbox{
+  height: 40px;
+  width: 40px;
+  background-color: #d48299;
+}
+.greenbox{
+  height: 40px;
+  width: 40px;
+  background-color: #8bb992;
 }
