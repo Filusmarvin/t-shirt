@@ -144,16 +144,6 @@ section{
   border:white;
 }
 
-.colorbox1{
-  position: absolute;
-  background-color: white;
-  border: 1px solid #81bce6;
-  top: 385px;
-  left: 308px;
-  height: 120px;
-  width: 120px;
-  visibility: hidden;
-}
 
 .shirt.color:hover{
   visibility: visible;
@@ -246,16 +236,31 @@ span{
 .shirt:hover .color{
   visibility: visible;
 }
-ul .word{
+ul{
   font-size: 30px;
+  color: #81bce6;
   list-style: none;
+  padding-left: 0px;
+}
+li{
+  background-image: url(shirts/tshirt.svg);
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: center;
+  text-align: center;
+  padding: 0px;
+  margin:0px;
+}
+
+.word{
+  font-size: 20px;
+    height: 52px;
+    padding: 0px;
+    margin: 20px;
 }
 .second{
   background-color: white;
   color: #81bce6;
-  background-image: url(shirts/tshirt.svg);
-  background-repeat: repeat-y;
-  background-size: 100px;
   border: 1px solid #81bce6;
   position: absolute;
   top: 205px;
@@ -263,6 +268,17 @@ ul .word{
   width: 120px;
   height: 300px;
   visibility:hidden;
+}
+
+.colorbox1{
+  position: absolute;
+  background-color: white;
+  border: 1px solid #81bce6;
+  top: 385px;
+  left: 308px;
+  height: 120px;
+  width: 120px;
+  visibility: hidden;
 }
 
 .colorbox2{
@@ -334,24 +350,56 @@ ul .word{
   justify-content: center;
 }
 .bluebox{
-  position:relative ;
-  height: 40px;
-  width: 40px;
+  position:absolute ;
+  top: 4px;
+  left: 6px;
+  height: 50px;
+  width: 50px;
   background-color:#81bce6;
+
+}
+
+.bluebox:hover{
+  background-color: white;
+  border: 1px solid #81bce6;
 }
 .pinkbox{
-  position:relative;
-  height: 40px;
-  width: 40px;
+  background-color: #d48299;
+  position:absolute;
+  top: 4px;
+  left: 65px;
+  height: 50px;
+  width: 50px;
+}
+
+.pinkbox:hover{
+  background-color: white;
+  border: 1px solid #81bce6;
+}
+
+.yellowbox{
+  position: absolute;
+  top: 60px;
+  left: 6px;
+  height: 50px;
+  width: 50px;
   background-color: orange;
 }
-.yellowbox{
-  height: 40px;
-  width: 40px;
-  background-color: #d48299;
+
+.yellowbox:hover{
+  background-color: white;
+  border: 1px solid #81bce6;
 }
 .greenbox{
-  height: 40px;
-  width: 40px;
+  position: absolute;
+  top: 60px;
+  left: 65px;
+  height: 50px;
+  width: 50px;
   background-color: #8bb992;
+}
+
+.greenbox:hover{
+  background-color: white;
+  border: 1px solid #81bce6;
 }
