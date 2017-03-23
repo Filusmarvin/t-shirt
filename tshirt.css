@@ -67,7 +67,9 @@ article{
 /*
 ============== vvvvv Icons    vvvvvv   ==============
 */
-
+.top{
+  border: 3px solid #81bce;
+}
 
 .fa {
     font-size: 40px !important;
@@ -128,9 +130,6 @@ section{
 
 .sz:hover{
   color:white;
-}
-.top {
-
 }
 
 .box{
@@ -243,7 +242,7 @@ ul{
   padding-left: 0px;
 }
 li{
-  background-image: url(shirts/tshirt.svg);
+/*  background-image: url(shirts/tshirt.svg); */
   background-repeat: no-repeat;
   background-size: 70px;
   background-position: center;
@@ -402,4 +401,16 @@ li{
 .greenbox:hover{
   background-color: white;
   border: 1px solid #81bce6;
+}
+
+
+
+
+.shopping{
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background-color:;
+  top: 800px;
+  left: 100px;
 }

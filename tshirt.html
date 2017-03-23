@@ -29,11 +29,11 @@
     <div class="shirt">
 			<p class="sz"> XL </p>
 			<div class="menu-selection first shirt-sz">
-				<ul class="sz#2">
-					<li class="xl"> <p class="word"> XL </p></li>
-					<li class="l"> <p class="word"> L </p> </li>
-					<li class="m"> <p class="word"> M </p> </li>
-					<li class="s"> <p class="word"> S </p> </li>
+				<ul class="szofshirt">
+					<li class="xl word">  XL </li>
+					<li class="l word">  L  </li>
+					<li class="m word">  M  </li>
+					<li class="s word">  S  </li>
 				</ul>
 			</div>
     </div>
@@ -48,7 +48,9 @@
 			</div>
     </div>
     <div class="shirt">
-			<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			<div class="fourthbox">
+				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			</div>
     </div>
   </section>
   <footer id="bottom">
@@ -77,11 +79,11 @@
     </div>
     <div class="shirt"><p class="sz"> XL </p>
 			<div class="menu-selection second shirt-sz">
-				<ul class="sz#2">
-					<li class="xl"> <p class="word"> XL </p></li>
-					<li class="l"> <p class="word"> L </p> </li>
-					<li class="m"> <p class="word"> M </p> </li>
-					<li class="s"> <p class="word"> S </p> </li>
+				<ul class="szofshirt">
+					<li class="xl word">  XL </li>
+					<li class="l word">  L  </li>
+					<li class="m word">  M  </li>
+					<li class="s word">  S  </li>
 				</ul>
 			</div>
     </div>
@@ -93,8 +95,10 @@
 				<div class="greenbox"></div>
 			</div>
 		</div>
-    <div class="shirt"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-    </div>
+		 <div class="fourthbox">
+    	<div class="shirt"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+     </div>
+	</div>
   </section>
   <footer id="bottom">
     <div id="word" class="money"> <span id="type"> Nature Lover </span> </div>
@@ -121,11 +125,11 @@
     <div class="shirt size">
 			<p class="sz"> XL </p>
 			<div class="menu-selection third shirt-sz">
-				<ul class="sz#3">
-					<li class="xl"> <p class="word"> XL </p></li>
-					<li class="l"> <p class="word"> L </p> </li>
-					<li class="m"> <p class="word"> M </p> </li>
-					<li class="s"> <p class="word"> S </p> </li>
+				<ul class="szofshirt">
+					<li class="xl word"> XL </li>
+					<li class="l word"> L  </li>
+					<li class= "m word"> M  </li>
+					<li class="s word"> S </li>
 				</ul>
 			</div>
     </div>
@@ -138,8 +142,10 @@
 		</div>
     </div>
     <div class="shirt">
-			 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-    </div>
+			<div class="fourthbox">
+			  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+     </div>
+		</div>
   </section>
   <footer id="bottom">
     <div id="word" class="money"> <span id="type"> Save the Trees </span> </div>
@@ -155,15 +161,23 @@
 
 
 <div class="shopping Cart">
-	<ul>
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
+	<p> Marvin's Shopping Cart <span class="one"> </span> <span class="two"> </span> </p>
  </div>
 
 
 <script>
+
+let buttons = document.querySelectorAll('button')
+	for (let i = 0; i < buttons.length; i++) {
+		let buttton = buttons[i];
+		button.addEventListener('click' , function(){
+			let whereTheNumberGoes = document.querySelector('.one')
+			whereTheNumberGoes.textContent = i + 1;
+		});
+	}
+
+
+
 
 <!-- front shirt blue -->
 	function rotating(){
@@ -226,7 +240,17 @@ function backrotation(){
 
 						buttontrio.addEventListener('click', backrotation3);
 
-<!--          Shirt Icon    -->
+//  =====================    Shopping Cart Icon    =================
+
+// I know I need to use something like this to condense it but I am not completely sure.
+// function theClickFunction(event) {
+//   let size = event.target.textContent;
+//   let dog = document.querySelector('the button below');
+//   dog.textContent = size;
+// }
+
+
+
 
 <!-- Small Shirt Change -->
 
@@ -242,8 +266,8 @@ XL.addEventListener('click' , pickSizeXl);
 <!-- Large Shirt Icon Change -->
 function pickSizeL (){
 	let element  = document.querySelector(".sz");
-	let greeting = 'L';
-      element.innerText = greeting;
+	let shirtSz = 'L';
+      element.innerText = shirtSz;
 		}
 
 let L = document.querySelector('.l');
@@ -283,49 +307,30 @@ function colorChanger(){
 
 */
 
+/* ============ Add number on the screen   ============ */
 
-function shoppingCart(){
-	let first = document.querySelector('.fa-shopping-cart');
-	let blank = document.createElement('li');
-	 first.appendChild('blank');
+
+		let chickens = document.querySelectorAll('.fourthbox');
+	    for (let i = 0; i < chickens.length; i++) {
+	      let button = chickens[i];
+	      button.addEventListener('click', function () {
+	        let whereTheNumberGoes = document.querySelector('.one');
+	        whereTheNumberGoes.textContent = i;
+	      });
+	    }
+
+function getTheSz(){
+	console.log('nice message')
+	let whereTheSzGo = document.querySelector('.two')
+	whereTheSzGo.textContent = i;
+	for (i = 0; i < chickens.length; i++){
+	};
 }
 
-let cart = document.querySelector('.shopping');
-cart.addEventListener('click' , shoppingCart);
 
+	i = document.querySelectorAll('.fourthbox')
 
-
-
-function addArrayToPage (theArray) {
-      let list = document.querySelector('.shopping');
-      let lis = list.querySelectorAll('li');
-      for (let i = 0; i < theArray.length; i++) {
-        let li = lis[i];
-        li.textContent = theArray[i];
-      }
-    }
-    let myArray = ['Color', 'Sz', 'Price'];
-		/* I am trying to see what I should input here to make the click even work.
-		I know it is amoung the lines of ().addEventListener('click' , addArrayToPage(myArray))
-		or somthing to that extent but was not sure of what should go in front of
-		 .addEventListener to let it know that I am referring to the icon shopping cart rather then
-		it being a text that I am clicking. */
-		let cartImage = document.querySelector('.fa-shopping-cart')
-    cartImage.addEventListener('click' , addArrayToPage(myArray));
-
-		function putNumberOnScreen () {
-      let whereTheNumberGoes = document.querySelector('span');
-      whereTheNumberGoes.textContent = i;
-    }
-    let buttons = document.querySelectorAll('button');
-    // let vs var scoping
-    for (let i = 0; i < buttons.length; i++) {
-      let button = buttons[i];
-      button.addEventListener('click', putNumberOnScreen);
-    }
-
-
-
+	button.addEventListener('click' , getTheSz)
 
 </script>
 
