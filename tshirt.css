@@ -157,15 +157,12 @@ footer{
   border: none;
 }
 
-#word{
+.words{
   max-width:49%;
   justify-content:
   border: 1px solid green;
 }
 
-#price{
-  justify-content:
-}
 span{
   color:#81bce6;
   font-size: 20px;

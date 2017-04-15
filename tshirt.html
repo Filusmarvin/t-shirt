@@ -2,16 +2,10 @@
 <html>
 <head>
 	<title> T Shirt </title>
-
   <link rel="stylesheet" href="tshirt.css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
 </head>
-
-
-
 <body>
-
 <article class="3shirts">
 	<div class="picbox">
   	<div class="shirts">
@@ -30,14 +24,13 @@
 			<p class="sz"> XL </p>
 			<div class="menu-selection first shirt-sz">
 				<ul class="szofshirt">
-					<li class="xl word">  XL </li>
+					<li class="xl word">  Finally </li>
 					<li class="l word">  L  </li>
 					<li class="m word">  M  </li>
 					<li class="s word">  S  </li>
 				</ul>
 			</div>
     </div>
-
     <div class="shirt">
 			<div class="box"></div>
 			<div class="color colorbox1">
@@ -53,18 +46,15 @@
 			</div>
     </div>
   </section>
-  <footer id="bottom">
-    <div id="word" class="money">
-			 <span id="type"> Save the Trees </span>
+  <footer class="bottom">
+    <div i class="money words">
+			 <span> Save the Trees </span>
 		</div>
-    <div id="word" class="money">
-			<span id="price"> $29 </span>
+    <div  class="money words">
+			<span> $29 </span>
 		</div>
   </footer>
 </article>
-
-
-
 <article class="3shirts">
 	<div class="picbox">
   	<div class="shirts">
@@ -100,14 +90,11 @@
      </div>
 	</div>
   </section>
-  <footer id="bottom">
-    <div id="word" class="money"> <span id="type"> Nature Lover </span> </div>
-    <div id="word" class="money"> <span id="price"> $19 </span> </div>
+  <footer class="bottom">
+    <div class="money words"> <span> Nature Lover </span> </div>
+    <div class="money words"> <span> $19 </span> </div>
   </footer>
 </article>
-
-
-
 <article class="3shirts">
 	<div class="picbox">
    <div class="shirts">
@@ -120,7 +107,6 @@
     </div>
     <div class="shirt">
 			<i class="fa fa-heart" aria-hidden="true"></i>
-
     </div>
     <div class="shirt size">
 			<p class="sz"> XL </p>
@@ -147,192 +133,18 @@
      </div>
 		</div>
   </section>
-  <footer id="bottom">
-    <div id="word" class="money"> <span id="type"> Save the Trees </span> </div>
-    <div id="word" class="money"> <span id="price"> $39 </span> </div>
+  <footer class="bottom">
+    <div class="money words"> <span> Save the Trees </span> </div>
+    <div class="money words"> <span > $39 </span> </div>
   </footer>
 </article>
 <!-- ^^^^ change id's to classes ^^^^ -->
 <i class="fa fa-repeat firsticon" aria-hidden="true"></i>
 <i class="fa fa-repeat secondicon" aria-hidden="true"></i>
 <i class="fa fa-repeat thirdicon" aria-hidden="true"></i>
-
-
-
-
 <div class="shopping Cart">
-	<p> Marvin's Shopping Cart <span class="one"> </span> <span class="two"> </span> </p>
+	<p> Name of item <br /> <span class="one"> </span> <span class="two"> </span> </p>
  </div>
-
-
-<script>
-
-let buttons = document.querySelectorAll('button')
-	for (let i = 0; i < buttons.length; i++) {
-		let buttton = buttons[i];
-		button.addEventListener('click' , function(){
-			let whereTheNumberGoes = document.querySelector('.one')
-			whereTheNumberGoes.textContent = i + 1;
-		});
-	}
-
-
-
-
-<!-- front shirt blue -->
-	function rotating(){
-		let element = document.querySelector('.frontblue');
-		element.style.transform = "rotateY(90deg)";
-	}
-
-	let button = document.querySelector('.firsticon');
-	    button.addEventListener('click', rotating);
-
-<!-- Backshirt blue -->
-function backrotation(){
-	let element = document.querySelector('.backblue');
-	element.style.transform = "rotateY(0deg)";
-}
-		button.addEventListener('click', backrotation);
-
-
-
-
-
-
-
-
-
-		<!-- front shirt pink -->
-			function rotating2(){
-				let element = document.querySelector('.frontpink');
-				element.style.transform = "rotateY(90deg)";
-			}
-
-			let buttondos = document.querySelector('.secondicon');
-			    buttondos.addEventListener('click', rotating2);
-
-		<!-- Backshirt pink -->
-		function backrotation2(){
-			let element = document.querySelector('.backpink');
-			element.style.transform = "rotateY(0deg)";
-		}
-				buttondos.addEventListener('click', backrotation2);
-
-
-
-
-
-				<!-- front shirt yellow -->
-					function rotating3(){
-						let element = document.querySelector('.frontyellow');
-						element.style.transform = "rotateY(90deg)";
-					}
-
-					let buttontrio = document.querySelector('.thirdicon');
-					    buttontrio.addEventListener('click', rotating3);
-
-				<!-- Backshirt yellow -->
-				function backrotation3(){
-					let element = document.querySelector('.backyellow');
-					element.style.transform = "rotateY(0deg)";
-				}
-
-						buttontrio.addEventListener('click', backrotation3);
-
-//  =====================    Shopping Cart Icon    =================
-
-// I know I need to use something like this to condense it but I am not completely sure.
-// function theClickFunction(event) {
-//   let size = event.target.textContent;
-//   let dog = document.querySelector('the button below');
-//   dog.textContent = size;
-// }
-
-
-
-
-<!-- Small Shirt Change -->
-
-function pickSizeXl (){
-	let element = document.querySelector('.sz');
-	let shirtSz = ('XL');
-	element.innerText = shirtSz;
-}
-
-let XL = document.querySelector('.xl');
-XL.addEventListener('click' , pickSizeXl);
-
-<!-- Large Shirt Icon Change -->
-function pickSizeL (){
-	let element  = document.querySelector(".sz");
-	let shirtSz = 'L';
-      element.innerText = shirtSz;
-		}
-
-let L = document.querySelector('.l');
-    L.addEventListener('click', pickSizeL);
-
-<!-- Medium Shirt Icon Shirt Change -->
-function pickSizeM () {
-	let element = document.querySelector(".sz");
-	let shirtsz = ('M')
-	element.innerText = shirtsz;
-}
-
-let m = document.querySelector('.m')
-	m.addEventListener('click' , pickSizeM);
-
-<!-- Small Shirt Change -->
-
-function pickShirtSizeS (){
-	let element = document.querySelector('.sz');
-	let shirtSz = ('S');
-	element.innerText = shirtSz;
-}
- let S = document.querySelector('.s');
- S.addEventListener('click', pickShirtSizeS);
-/*
-==============   Color box will change color in section  ======================
-*/
-
-
-
-/*
-function colorChanger(){
-
-	}
-	let xl = document.querySelector('.l');
-		xl.addEventListener('click', colorchanger);
-
-*/
-
-/* ============ Add number on the screen   ============ */
-
-
-		let chickens = document.querySelectorAll('.fourthbox');
-	    for (let i = 0; i < chickens.length; i++) {
-	      let button = chickens[i];
-	      button.addEventListener('click', function () {
-	        let whereTheNumberGoes = document.querySelector('.one');
-	        whereTheNumberGoes.textContent = i;
-	      });
-	    }
-
-function getTheSz(){
-	console.log('nice message')
-	let whereTheSzGo = document.querySelector('.two')
-	whereTheSzGo.textContent = i;
-	for (i = 0; i < chickens.length; i++){
-	};
-}
-
-
-	i = document.querySelectorAll('.fourthbox')
-
-	button.addEventListener('click' , getTheSz)
-
-</script>
-
+<script src="t-shirt.js"></script>
 </body>
 </html>
