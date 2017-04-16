@@ -40,18 +40,18 @@
 				<div class="greenbox"></div>
 			</div>
     </div>
-    <div class="shirt">
+    <div class="shirt theCart" onclick="moveToCart1()">
 			<div class="fourthbox">
 				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 			</div>
     </div>
   </section>
   <footer class="bottom">
-    <div i class="money words">
-			 <span> Save the Trees </span>
+    <div class="money words">
+			 <span class="type"> Save the Trees </span>
 		</div>
-    <div  class="money words">
-			<span> $29 </span>
+    <div  class="money words" >
+			<span class="prices"> $29 </span>
 		</div>
   </footer>
 </article>
@@ -85,7 +85,7 @@
 				<div class="greenbox"></div>
 			</div>
 		</div>
-		 <div class="fourthbox">
+		 <div class="fourthbox" onclick="moveToCart2()">
     	<div class="shirt"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
      </div>
 	</div>
@@ -127,15 +127,15 @@
 			<div class="greenbox"></div>
 		</div>
     </div>
-    <div class="shirt">
+    <div class="shirt" onclick="moveToCart3()">
 			<div class="fourthbox">
 			  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
      </div>
 		</div>
   </section>
   <footer class="bottom">
-    <div class="money words"> <span> Save the Trees </span> </div>
-    <div class="money words"> <span > $39 </span> </div>
+    <div class="money words"> <span class="type"> Save the Trees </span> </div>
+    <div class="money words"> <span class="cost"> $39 </span> </div>
   </footer>
 </article>
 <!-- ^^^^ change id's to classes ^^^^ -->
@@ -143,7 +143,11 @@
 <i class="fa fa-repeat secondicon" aria-hidden="true"></i>
 <i class="fa fa-repeat thirdicon" aria-hidden="true"></i>
 <div class="shopping Cart">
-	<p> Name of item <br /> <span class="one"> </span> <span class="two"> </span> </p>
+	<p> Name of item and Price</p>
+	<ul id="list">
+	</ul>
+	<button id="total" onclick="theTotal()">Total</button>
+	<span id="totalAmount"> </span>
  </div>
 <script src="t-shirt.js"></script>
 </body>
