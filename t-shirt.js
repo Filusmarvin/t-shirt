@@ -1,11 +1,4 @@
-// let buttons = document.querySelectorAll('button')
-// 	for (let i = 0; i < buttons.length; i++) {
-// 		let buttton = buttons[i];
-// 		button.addEventListener('click' , function(){
-// 			let whereTheNumberGoes = document.querySelector('.one')
-// 			whereTheNumberGoes.textContent = i + 1;
-// 		});
-// 	}
+
 <!-- front shirt blue -->
 function rotating(){
 	let element = document.querySelector('.frontblue');
@@ -83,30 +76,36 @@ var cartPrice = cartIcon.querySelector('.prices').innerHTML;
 var prices = []
 
 function moveToCart1 (){
-	let node = document.createElement("li");
-	let word = document.createTextNode('Save the Trees $29')
-	node.appendChild(word);
-	document.getElementById('list').appendChild(node);
-	prices.push(19);
-	console.log(prices);
+		if (prices.length < 8){
+		let node = document.createElement("li");
+		let word = document.createTextNode('Save the Trees $29')
+		node.appendChild(word);
+		document.getElementById('list').appendChild(node);
+		prices.push(29);
+		console.log(prices);
+	}
 }
 
 function moveToCart2 (){
-	let node = document.createElement("li");
-	let word = document.createTextNode('Nature Lover $19')
-	node.appendChild(word);
-	document.getElementById('list').appendChild(node);
-	prices.push(19);
-	console.log(prices)
+	if (prices.length < 8){
+		let node = document.createElement("li");
+		let word = document.createTextNode('Nature Lover $19')
+		node.appendChild(word);
+		document.getElementById('list').appendChild(node);
+		prices.push(19);
+		console.log(prices)
+	}
 }
 
 function moveToCart3 (){
-	let node = document.createElement("li");
-	let word = document.createTextNode('Forest Walk $39')
-	node.appendChild(word);
-	document.getElementById('list').appendChild(node);
-	prices.push(39);
-	console.log(prices);
+	if (prices.length < 8){
+		let node = document.createElement("li");
+		let word = document.createTextNode('Forest Walk $39')
+		node.appendChild(word);
+		document.getElementById('list').appendChild(node);
+		prices.push(39);
+		console.log(prices);
+	}
 }
 
 function add(a, b) {
@@ -117,4 +116,18 @@ function theTotal (){
 	console.log(prices.reduce(add, 0));
 	let placeTotal = document.getElementById("totalAmount")
 	placeTotal.innerHTML = totals;
+	discount()
+}
+
+function discount() {
+	if (prices.length >= 5){
+		let totals = document.getElementById('totalAmount').textContent;
+		let display = document.getElementById('discount')
+		let discount = totals * .05;
+		let afterDiscount = document.getElementById('afterDiscount');
+		console.log(discount);
+	  display.innerHTML = 'Discount ' + discount;
+		let newPrice = totals - discount;
+		afterDiscount.innerHTML = 'New Price: ' + newPrice;
+	}
 }
